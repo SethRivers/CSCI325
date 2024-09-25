@@ -16,22 +16,108 @@ class Vector{
   int vec_size, vec_capacity;
 
  public:
+
+
+/**
+ * Class's Constructor; readying and initilizing things for us to use. 
+ * in this case; a Vector
+ * 
+ * @pre no pre condition
+ * @post no post item
+ * 
+ */
   Vector();
 
+
+/**
+ * 
+ *
+ * @param const Vector &other 
+ * @pre 
+ * @post 
+ * 
+ */
   Vector(const Vector &other);
 
+
+/**
+ * 
+ *
+ * @param const Vector &other 
+ * @pre 
+ * @return Vector& 
+ * @post 
+ * 
+ */
   Vector& operator=(const Vector &other);
 
+
+/**
+ * 
+ *
+ * @pre 
+ * @return int 
+ * @post 
+ * 
+ */
   int size();
 
+
+/**
+ * 
+ *
+ * @pre 
+ * @return int 
+ * @post 
+ * 
+ */
   int capacity();
 
+
+/**
+ * 
+ *
+ * @param int element 
+ * @pre 
+ * @return void 
+ * @post 
+ * 
+ */
   void push_back(int element);
 
+
+/**
+ * 
+ *
+ * @param int n 
+ * @pre 
+ * @return void 
+ * @post 
+ * 
+ */
   void reserve(int n);
 
+
+/**
+ * 
+ *
+ * @param unsigned int index 
+ * @pre 
+ * @return int& 
+ * @post 
+ * 
+ */
   int& operator[](unsigned int index);
   
+
+/**
+ * 
+ *
+ * @pre 
+ * @post 
+ * 
+ */
   ~Vector();
+  
 
 #endif //VECTOR_H
