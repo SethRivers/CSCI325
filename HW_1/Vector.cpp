@@ -98,11 +98,13 @@ Vector& Vector::operator=(const Vector &other){
   for (int i = 0; i < other.vec_size; i++){
     vec_ptr[i] = other.vec_ptr[i];
   }
+  //transfers data
   vec_size = other.vec_size;
 
   return *this;
 }
 
 int& Vector::operator[](unsigned int index){
+  //shows the element at this specific point
   return vec_ptr[index];
 }
